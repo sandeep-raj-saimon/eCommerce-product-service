@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     # newly created apps
     "base.apps.BaseConfig",
-    "django_elasticsearch_dsl"
+    "django_elasticsearch_dsl",
+    "rest_framework"
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,4 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+RUN_SERVER_PORT = 8080
