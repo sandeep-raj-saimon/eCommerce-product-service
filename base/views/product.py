@@ -5,9 +5,8 @@ from ..models import *
 from ..documents import *
 from ..utils import *
 
-class ProductView(APIView):
+class ProductView(View):
     def get(self, request, *args, **kwargs):
-        # return HttpResponse('Creating Product')
         try:
             query_param = request.GET.get("q")
             if query_param:
